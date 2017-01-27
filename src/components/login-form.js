@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Button, Card, CardSection } from './common';
+import { Button, CardContainer, CardSection } from './common';
 
 class LoginForm extends Component {
     render() {
         return (
-            <Card>
+            <CardContainer>
                 <CardSection />
                 <CardSection />
                 <CardSection>
@@ -12,7 +12,7 @@ class LoginForm extends Component {
                         Log in
                     </Button>
                 </CardSection>
-            </Card>
+            </CardContainer>
         );
     }
 }
