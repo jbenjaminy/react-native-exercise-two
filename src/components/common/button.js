@@ -8,7 +8,7 @@ const Button = ({ onPress }) => {
             onPress={onPress}
             style={buttonStyle}
         >
-            <Text style={textStyle}>Purchase</Text>
+            <Text style={textStyle}>Log in</Text>
         </TouchableOpacity>
     );
 };

@@ -15,11 +15,11 @@ class LoginForm extends Component {
                     */}
                     <TextInput style={{ height: 20, width: 100 }} />
                 </CardSection>
+
                 <CardSection />
+
                 <CardSection>
-                    <Button>
-                        Log in
-                    </Button>
+                    <Button />
                 </CardSection>
             </CardContainer>
         );
