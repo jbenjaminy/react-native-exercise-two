@@ -35,6 +35,7 @@ class LoginForm extends Component {
                         real-time searches.
                     */}
                     <Input
+                        label='Email'
                         value={this.state.text}
                         onChangeText={text => this.setState({ text })}
                     />
