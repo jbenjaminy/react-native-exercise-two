@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 /* TextInput is another 'primative' tag from react-native */
-import { TextInput } from 'react-native';
-import { Button, CardContainer, CardSection } from './common';
+import { Button, CardContainer, CardSection, Input } from './common';
 
 class LoginForm extends Component {
     /* state is what we use to deal with feedback from the user. */
@@ -21,14 +20,23 @@ class LoginForm extends Component {
                         when TextInput rerenders, we tell it that its value
                         property is 'this.state.text'
 
-                        -fat arrow callback function gets called whenever a
+                        *fat arrow callback function gets called whenever a
                         user types in text -- gets called with the value the
                         user added.
+
+                        *whenever we call 'setState' the component immediately
+                        rerenders.
+
+                        *the textInput has no idea what its value is when the
+                        user types something -- the text is stored as a piece of
+                        state instead of being a value in the textInput that we
+                        are grabbing out of it. The benefit of this is that we
+                        always know what this value is -- that's how we can make
+                        real-time searches.
                     */}
-                    <TextInput
+                    <Input
                         value={this.state.text}
                         onChangeText={text => this.setState({ text })}
-                        style={{ height: 20, width: 100 }}
                     />
                 </CardSection>
 

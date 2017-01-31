@@ -11,6 +11,7 @@ export * from './button';
 export * from './card-container';
 export * from './card-section';
 export * from './header';
+export * from './input';
 
 /*
 NOTE: if you get an ESlintrc error using this approach, you may have to go back
